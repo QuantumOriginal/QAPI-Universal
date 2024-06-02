@@ -6,7 +6,7 @@ import org.springframework.http.HttpStatus
 import org.springframework.http.MediaType
 import org.springframework.http.ResponseEntity
 
-class Responses {
+object Responses {
     fun failed(input: String?): ResponseEntity<String> {
         val returnObject: JsonObject = JsonObject()
         returnObject.addProperty("code", -1)
